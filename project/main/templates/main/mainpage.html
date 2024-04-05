@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content %}
+<h1 class="contents">2024 멋쟁이사자처럼 {{ generation }}기 최민</h1>
+<img src="{%static 'image/lion.png'%}" alt="logo" width="100px">
+<div class="contents">Django MTV 세션 내용 정리</div>
+
+<div>Django?</div>
+<ul>
+<li>파이썬으로 작성된 웹 애플리케이션 프레임워크</li>
+</ul>
+<div>Django MTV 패턴이란?</div>
+<ul>
+    {% for mtv in MTV %}
+        <li>{{mtv}}</li>
+        {%endfor%}
+</ul>
+<div>템플릿(template)언어</div>
+<ul>
+    <li>{{template.lan}}</li>
+</ul>
+<div>템플릿(template)상속</div>
+<ul>
+    <li>{{template.rep}}</li>
+</ul>
+
+{%endblock%}
